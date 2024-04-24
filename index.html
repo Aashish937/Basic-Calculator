@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <audio id="audio" src="beep-6-96243.mp3" autoplay="false"></audio>
+        
+        <div class="header">
+            Basic Calculator
+        </div>
+
+        <div>
+            <input class="display" type="text" id="display">
+        </div>
+
+        <div class="button">
+            <button class="btn" onClick="Clear()">C</button>
+            <button class="btn" onClick="Solve('%')">%</button>
+            <button class="btn" onClick="Backspace()">←</button>
+            <button class="btn" onClick="Solve('/')">/</button>
+            <br>
+            <button class="btn" onClick="Solve('7')">7</button>
+            <button class="btn" onClick="Solve('8')">8</button>
+            <button class="btn" onClick="Solve('9')">9</button>
+            <button class="btn" onClick="Solve('*')">*</button>
+            <br>
+            <button class="btn" onClick="Solve('4')">4</button>
+            <button class="btn" onClick="Solve('5')">5</button>
+            <button class="btn" onClick="Solve('6')">6</button>
+            <button class="btn" onClick="Solve('+')">+</button>
+            <br>
+            <button class="btn" onClick="Solve('3')">3</button>
+            <button class="btn" onClick="Solve('2')">2</button>
+            <button class="btn" onClick="Solve('1')">1</button>
+            <button class="btn" onClick="Solve('-')">-</button>
+            <br>
+            <button class="btn" onClick="Solve('00')">00</button>
+            <button class="btn" onClick="Solve('0')">0</button>
+            <button class="btn" onClick="Solve('.')">.</button>
+            <button class="btn" onClick="Result()">=</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
